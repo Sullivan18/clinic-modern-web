@@ -40,8 +40,9 @@ const Header = () => {
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Link para a página inicial */}
         <Link
-          to="/clinic-modern-web"
+          to="/"
           className="text-2xl font-bold cursor-pointer"
+          onClick={() => setIsOpen(false)}  
         >
           Uniderma
         </Link>
@@ -116,7 +117,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 className="cursor-pointer"
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(false)}  // Fechar o menu mobile
               >
                 Home
               </Link>
@@ -127,7 +128,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 className="cursor-pointer"
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(false)}  // Fechar o menu mobile
               >
                 Serviços
               </Link>
@@ -138,7 +139,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 className="cursor-pointer"
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(false)}  // Fechar o menu mobile
               >
                 Equipe
               </Link>
@@ -149,7 +150,7 @@ const Header = () => {
                 smooth={true}
                 duration={500}
                 className="cursor-pointer"
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(false)}  // Fechar o menu mobile
               >
                 Contato
               </Link>

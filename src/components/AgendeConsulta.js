@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import Swal from 'sweetalert2'; // Importa SweetAlert2
 import Header from './Header'; // Importa o Header para a página de agendamento
 
 const AgendeConsulta = () => {
@@ -23,14 +24,40 @@ const AgendeConsulta = () => {
       });
 
       if (response.ok) {
-        alert('Agendamento enviado e salvo com sucesso!');
+        // Exibe uma confirmação moderna usando SweetAlert2
+        Swal.fire({
+          title: 'Agendamento Confirmado!',
+          text: 'Seu agendamento foi realizado com sucesso.',
+          icon: 'success',
+          confirmButtonText: 'OK',
+          customClass: {
+            confirmButton: 'bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg', // Botão customizado
+          },
+        });
+
         reset();
       } else {
-        alert('Erro ao salvar o agendamento');
+        Swal.fire({
+          title: 'Erro!',
+          text: 'Ocorreu um erro ao salvar seu agendamento.',
+          icon: 'error',
+          confirmButtonText: 'Tentar novamente',
+          customClass: {
+            confirmButton: 'bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg',
+          },
+        });
       }
     } catch (e) {
       console.error('Erro ao enviar o agendamento:', e);
-      alert('Erro ao salvar o agendamento');
+      Swal.fire({
+        title: 'Erro!',
+        text: 'Ocorreu um erro ao salvar seu agendamento.',
+        icon: 'error',
+        confirmButtonText: 'Tentar novamente',
+        customClass: {
+          confirmButton: 'bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-lg',
+        },
+      });
     }
   };
 

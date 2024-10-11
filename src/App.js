@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'; 
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Services from './components/Services';
@@ -25,7 +25,7 @@ const App = () => {
       // Adiciona a classe 'scroll-visible' ao body quando a tela é rolada
       document.body.classList.add('scroll-visible');
 
-      // Limpa o timeout anterior, se o usuário continuar rolando
+      // Limpa o timeout anterior se o usuário continuar rolando
       clearTimeout(timeoutId);
 
       // Remove a classe 'scroll-visible' após 2 segundos sem rolar
@@ -58,7 +58,7 @@ const App = () => {
         <div className="bg-white dark:bg-gray-900 dark:text-white min-h-screen">
           <Header />
           <Routes>
-            <Route path="/clinic-modern-web" element={
+            <Route path="/" element={
               <>
                 <Banner />
                 <Services />
