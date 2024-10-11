@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/clinic-modern-web/static/css/main.887b5aa7.css",
+    "main.js": "/clinic-modern-web/static/js/main.b1bb7964.js",
+    "static/js/453.7ee4257d.chunk.js": "/clinic-modern-web/static/js/453.7ee4257d.chunk.js",
+    "index.html": "/clinic-modern-web/index.html",
+    "main.887b5aa7.css.map": "/clinic-modern-web/static/css/main.887b5aa7.css.map",
+    "main.b1bb7964.js.map": "/clinic-modern-web/static/js/main.b1bb7964.js.map",
+    "453.7ee4257d.chunk.js.map": "/clinic-modern-web/static/js/453.7ee4257d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.887b5aa7.css",
+    "static/js/main.b1bb7964.js"
+  ]
+}
