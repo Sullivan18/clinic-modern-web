@@ -14,3 +14,28 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* O fundo da barra de rolagem permanece invisível */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* Cor da barra com opacidade */
+  border-radius: 10px;
+  transition: opacity 0.3s ease-in-out; /* Transição suave de opacidade */
+  opacity: 0; /* Inicialmente escondido */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Cor ao passar o mouse */
+}
+
+.scroll-visible ::-webkit-scrollbar-thumb {
+  opacity: 1; /* Torna a barra de rolagem visível ao adicionar essa classe */
+}
+

@@ -8,12 +8,14 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "express": "^4.21.1",
     "framer-motion": "^11.11.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
     "react-hook-form": "^7.53.0",
     "react-icons": "^5.3.0",
+    "react-router-dom": "^6.27.0",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "swiper": "^11.1.14",
@@ -50,5 +52,10 @@
     "gh-pages": "^6.2.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.13"
-  }
+  },
+  "description": "A modern, responsive website built for a clinic using the latest web development technologies. The site offers a sleek design, seamless animations, and a user-friendly interface, ensuring an optimal experience for both desktop and mobile users. The project was developed with a focus on performance, aesthetics, and ease of navigation.",
+  "main": "tailwind.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

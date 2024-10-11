@@ -42,6 +42,7 @@ const Banner = () => (
         className="mt-8 px-10 py-4 bg-gradient-to-r from-green-400 to-blue-500 text-white font-semibold text-lg rounded-full shadow-lg hover:from-green-500 hover:to-blue-600 hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
         whileHover={{ scale: 1.1 }}
         transition={{ duration: 0.3 }}
+        onClick={() => window.location.href = '/agende-consulta'}  // Redireciona para a página de agendamento
       >
         Agende sua Consulta
       </motion.button>
