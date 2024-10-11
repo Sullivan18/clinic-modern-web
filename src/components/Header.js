@@ -30,7 +30,7 @@ const Header = () => {
       transition={{ duration: 0.5 }}
     >
       <nav className="max-w-7xl mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Clínica</h1>
+        <h1 className="text-2xl font-bold">Uniderma</h1>
 
         {/* Menu para Desktop */}
         <ul className="hidden md:flex space-x-8">

@@ -11,6 +11,7 @@ const LeadForm = () => {
 
   const onSubmit = async (data) => {
     try {
+      // Simula envio do lead
       await new Promise((resolve) => setTimeout(resolve, 1000));
       alert('Lead enviado com sucesso!');
       reset();
@@ -25,19 +26,21 @@ const LeadForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 px-4">
       <motion.div
         initial="hidden"
         animate="visible"
         variants={fadeIn}
         transition={{ duration: 0.8 }}
-        className="bg-neutralLight dark:bg-neutralDark p-10 rounded-lg shadow-lg w-full max-w-2xl mx-4"
+        className="bg-neutralLight dark:bg-neutralDark p-10 rounded-lg shadow-lg w-full max-w-2xl mx-auto"
       >
         <h3 className="text-3xl font-semibold mb-6 text-center text-primary dark:text-neutralLight">
           Entre em Contato
         </h3>
-        <form onSubmit={handleSubmit(onSubmit)} noValidate>
-          <div className="mb-4">
+        
+        <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">
+          {/* Campo Nome */}
+          <div>
             <label htmlFor="name" className="block text-sm font-medium text-primary dark:text-neutralLight">
               Nome
             </label>
@@ -51,7 +54,9 @@ const LeadForm = () => {
             />
             {errors.name && <span className="text-red-500 text-sm">{errors.name.message}</span>}
           </div>
-          <div className="mb-4">
+
+          {/* Campo Email */}
+          <div>
             <label htmlFor="email" className="block text-sm font-medium text-primary dark:text-neutralLight">
               Email
             </label>
@@ -72,7 +77,9 @@ const LeadForm = () => {
             />
             {errors.email && <span className="text-red-500 text-sm">{errors.email.message}</span>}
           </div>
-          <div className="mb-4">
+
+          {/* Campo Mensagem */}
+          <div>
             <label htmlFor="message" className="block text-sm font-medium text-primary dark:text-neutralLight">
               Mensagem
             </label>
@@ -87,6 +94,8 @@ const LeadForm = () => {
             />
             {errors.message && <span className="text-red-500 text-sm">{errors.message.message}</span>}
           </div>
+
+          {/* Botão de Enviar */}
           <motion.button
             type="submit"
             className="w-full bg-accent text-white py-3 rounded-md shadow-md hover:bg-accent focus:ring-4 focus:ring-accent dark:bg-accent dark:hover:bg-accent dark:focus:ring-accent"

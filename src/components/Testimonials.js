@@ -10,7 +10,7 @@ const Testimonials = () => {
     <section id="testimonials" className="py-16 bg-gray-100">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h2
-          className="text-2xl md:text-3xl font-bold mb-6"
+          className="text-4xl md:text-5xl font-bold mb-12 text-gray-800"
           initial="hidden"
           whileInView="visible"
           exit="hidden"
@@ -21,24 +21,44 @@ const Testimonials = () => {
           Depoimentos
         </motion.h2>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12"
           initial="hidden"
           whileInView="visible"
           exit="hidden"
           viewport={{ once: false, amount: 0.8 }}
           transition={{ staggerChildren: 0.3 }}
         >
-          <motion.div className="bg-white p-6 rounded-lg shadow-lg" variants={slideIn}>
-            <blockquote className="italic">"Excelente atendimento! A Dra. Maria é muito atenciosa."</blockquote>
-            <p className="mt-4">- Paciente A</p>
+          {/* Depoimento 1 */}
+          <motion.div
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            variants={slideIn}
+          >
+            <blockquote className="italic text-lg text-gray-600">
+              "Excelente atendimento! A Dra. Maria é muito atenciosa."
+            </blockquote>
+            <p className="mt-4 text-gray-900 font-semibold">- Paciente A</p>
           </motion.div>
-          <motion.div className="bg-white p-6 rounded-lg shadow-lg" variants={slideIn}>
-            <blockquote className="italic">"Fiquei muito satisfeito com o tratamento."</blockquote>
-            <p className="mt-4">- Paciente B</p>
+
+          {/* Depoimento 2 */}
+          <motion.div
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            variants={slideIn}
+          >
+            <blockquote className="italic text-lg text-gray-600">
+              "Fiquei muito satisfeito com o tratamento."
+            </blockquote>
+            <p className="mt-4 text-gray-900 font-semibold">- Paciente B</p>
           </motion.div>
-          <motion.div className="bg-white p-6 rounded-lg shadow-lg" variants={slideIn}>
-            <blockquote className="italic">"Equipe muito profissional e qualificada."</blockquote>
-            <p className="mt-4">- Paciente C</p>
+
+          {/* Depoimento 3 */}
+          <motion.div
+            className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            variants={slideIn}
+          >
+            <blockquote className="italic text-lg text-gray-600">
+              "Equipe muito profissional e qualificada."
+            </blockquote>
+            <p className="mt-4 text-gray-900 font-semibold">- Paciente C</p>
           </motion.div>
         </motion.div>
       </div>

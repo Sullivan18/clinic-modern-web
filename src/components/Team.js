@@ -1,4 +1,7 @@
 import { motion } from 'framer-motion';
+import dermat from '../assets/dermat.jpeg';
+import estet from '../assets/estet.jpeg';
+import dermat2 from '../assets/dermat2.jpeg';
 
 const Team = () => {
   const fadeInUp = {
@@ -10,7 +13,7 @@ const Team = () => {
     <section id="team" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto text-center">
         <motion.h2
-          className="text-2xl md:text-3xl font-bold mb-6"
+          className="text-4xl md:text-5xl font-bold mb-12 text-gray-800"
           initial="hidden"
           whileInView="visible"
           exit="hidden"
@@ -20,9 +23,10 @@ const Team = () => {
         >
           Nossa Equipe
         </motion.h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {/* Profissional 1 */}
           <motion.div
-            className="bg-gray-100 p-6 rounded-lg shadow-lg"
+            className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
             initial="hidden"
             whileInView="visible"
             exit="hidden"
@@ -31,15 +35,17 @@ const Team = () => {
             variants={fadeInUp}
           >
             <img
-              src="/path/to/image1.jpg"
-              alt="Profissional 1"
-              className="rounded-full w-32 mx-auto mb-4"
+              src={dermat}
+              alt="Dr. João - Dermatologista"
+              className="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-blue-500 shadow-md"
             />
-            <h3 className="text-lg md:text-xl font-semibold">Dr. João</h3>
-            <p>Dermatologista</p>
+            <h3 className="text-xl font-semibold text-gray-900">Dr. João</h3>
+            <p className="text-gray-600">Dermatologista</p>
           </motion.div>
+
+          {/* Profissional 2 */}
           <motion.div
-            className="bg-gray-100 p-6 rounded-lg shadow-lg"
+            className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
             initial="hidden"
             whileInView="visible"
             exit="hidden"
@@ -48,15 +54,17 @@ const Team = () => {
             variants={fadeInUp}
           >
             <img
-              src="/path/to/image2.jpg"
-              alt="Profissional 2"
-              className="rounded-full w-32 mx-auto mb-4"
+              src={estet}
+              alt="Dra. Maria - Esteticista"
+              className="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-green-500 shadow-md"
             />
-            <h3 className="text-lg md:text-xl font-semibold">Dra. Maria</h3>
-            <p>Esteticista</p>
+            <h3 className="text-xl font-semibold text-gray-900">Dra. Maria</h3>
+            <p className="text-gray-600">Esteticista</p>
           </motion.div>
+
+          {/* Profissional 3 */}
           <motion.div
-            className="bg-gray-100 p-6 rounded-lg shadow-lg"
+            className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
             initial="hidden"
             whileInView="visible"
             exit="hidden"
@@ -65,12 +73,12 @@ const Team = () => {
             variants={fadeInUp}
           >
             <img
-              src="/path/to/image3.jpg"
-              alt="Profissional 3"
-              className="rounded-full w-32 mx-auto mb-4"
+              src={dermat2}
+              alt="Dr. Carlos - Dermatologista"
+              className="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-purple-500 shadow-md"
             />
-            <h3 className="text-lg md:text-xl font-semibold">Dr. Carlos</h3>
-            <p>Dermatologista</p>
+            <h3 className="text-xl font-semibold text-gray-900">Dr. Carlos</h3>
+            <p className="text-gray-600">Dermatologista</p>
           </motion.div>
         </div>
       </div>

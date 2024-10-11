@@ -25,9 +25,7 @@ const App = () => {
         <meta property="og:description" content="Oferecemos os melhores cuidados dermatológicos." />
         <meta property="og:image" content="/path/to/image.jpg" />
       </Helmet>
-      <button onClick={toggleDarkMode} className="absolute top-4 right-4 bg-gray-800 text-white p-2 rounded">
-        {darkMode ? "Modo Claro" : "Modo Escuro"}
-      </button>
+
       <div className="bg-white dark:bg-gray-900 dark:text-white min-h-screen">
         <Header />
         <Banner />
