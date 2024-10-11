@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/clinic-modern-web/static/css/main.c990f520.css",
-    "main.js": "/clinic-modern-web/static/js/main.aa0fadcc.js",
+    "main.css": "/clinic-modern-web/static/css/main.c8f6bf7f.css",
+    "main.js": "/clinic-modern-web/static/js/main.8652f088.js",
     "static/js/453.7ee4257d.chunk.js": "/clinic-modern-web/static/js/453.7ee4257d.chunk.js",
     "static/media/7957_Easy-Resize.com_.jpg": "/clinic-modern-web/static/media/7957_Easy-Resize.com_.5728f2848b9b738c568f.jpg",
     "static/media/wpp.png": "/clinic-modern-web/static/media/wpp.4658ba415313a49811f7.png",
     "index.html": "/clinic-modern-web/index.html",
-    "main.c990f520.css.map": "/clinic-modern-web/static/css/main.c990f520.css.map",
-    "main.aa0fadcc.js.map": "/clinic-modern-web/static/js/main.aa0fadcc.js.map",
+    "main.c8f6bf7f.css.map": "/clinic-modern-web/static/css/main.c8f6bf7f.css.map",
+    "main.8652f088.js.map": "/clinic-modern-web/static/js/main.8652f088.js.map",
     "453.7ee4257d.chunk.js.map": "/clinic-modern-web/static/js/453.7ee4257d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c990f520.css",
-    "static/js/main.aa0fadcc.js"
+    "static/css/main.c8f6bf7f.css",
+    "static/js/main.8652f088.js"
   ]
 }
