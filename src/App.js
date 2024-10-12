@@ -10,6 +10,8 @@ import Location from './components/Location';
 import LeadForm from './components/LeadForm';
 import WhatsAppButton from './components/WhatsAppButton';
 import AgendeConsulta from './components/AgendeConsulta';
+import About from './components/About';
+import FAQ from './components/FAQ';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -63,8 +65,10 @@ const App = () => {
                 <Banner />
                 <Services />
                 <Team />
+                <About />
                 <Testimonials />
                 <Location />
+                <FAQ />
                 <LeadForm />
               </>
             }/>

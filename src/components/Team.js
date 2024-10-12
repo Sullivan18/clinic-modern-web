@@ -38,6 +38,7 @@ const Team = () => {
               src={dermat}
               alt="Dr. João - Dermatologista"
               className="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-blue-500 shadow-md"
+              loading="lazy"  // Melhorando a performance com carregamento lazy
             />
             <h3 className="text-xl font-semibold text-gray-900">Dr. João</h3>
             <p className="text-gray-600">Dermatologista</p>
@@ -57,6 +58,7 @@ const Team = () => {
               src={estet}
               alt="Dra. Maria - Esteticista"
               className="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-green-500 shadow-md"
+              loading="lazy"  // Melhorando a performance com carregamento lazy
             />
             <h3 className="text-xl font-semibold text-gray-900">Dra. Maria</h3>
             <p className="text-gray-600">Esteticista</p>
@@ -76,6 +78,7 @@ const Team = () => {
               src={dermat2}
               alt="Dr. Carlos - Dermatologista"
               className="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-purple-500 shadow-md"
+              loading="lazy"  // Melhorando a performance com carregamento lazy
             />
             <h3 className="text-xl font-semibold text-gray-900">Dr. Carlos</h3>
             <p className="text-gray-600">Dermatologista</p>

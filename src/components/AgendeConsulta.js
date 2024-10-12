@@ -14,14 +14,15 @@ const AgendeConsulta = () => {
 
   const onSubmit = async (data) => {
     try {
-      // Envia os dados do agendamento para o back-end
-      const response = await fetch('http://localhost:5000/api/agendar', {
+      // Envia os dados do agendamento para a API no Vercel
+      const response = await fetch('https://api-clinic-jw2sh6fet-andre-luizs-projects-95c7c157.vercel.app/api/agendar', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
+      
 
       if (response.ok) {
         // Exibe uma confirmação moderna usando SweetAlert2
@@ -31,10 +32,9 @@ const AgendeConsulta = () => {
           icon: 'success',
           confirmButtonText: 'OK',
           customClass: {
-            confirmButton: 'bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg', // Botão customizado
+            confirmButton: 'bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg',
           },
         });
-
         reset();
       } else {
         Swal.fire({
