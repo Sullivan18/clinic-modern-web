@@ -14,7 +14,10 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (location.pathname !== "/agende-consulta") {
+      if (
+        location.pathname !== "/agende-consulta" &&
+        location.pathname !== "/videos"
+      ) {
         setScrollPosition(window.scrollY);
       }
     };
@@ -30,11 +33,12 @@ const Header = () => {
   }, [location.pathname]);
 
   const isAgendeConsultaPage = location.pathname === "/agende-consulta";
+  const isVideosPage = location.pathname === "/videos";
 
   return (
     <motion.header
       className={`fixed w-full z-50 p-4 transition-colors duration-300 ${
-        isAgendeConsultaPage || scrollPosition > 50
+        isAgendeConsultaPage || isVideosPage || scrollPosition > 50
           ? "bg-blue-500 text-white shadow-lg" // Change the color when scrolling
           : "bg-transparent text-[#a0c4ff]"    // Transparent header at the top
       }`}
@@ -72,6 +76,14 @@ const Header = () => {
               className="cursor-pointer hover:text-accent transition"
             >
               Equipe
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/videos"
+              className="cursor-pointer hover:text-accent transition"
+            >
+              Vídeos
             </Link>
           </li>
           <li>
@@ -125,6 +137,15 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 Equipe
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/videos"
+                className="cursor-pointer"
+                onClick={() => setIsOpen(false)}
+              >
+                Vídeos
               </Link>
             </li>
             <li>

@@ -12,6 +12,7 @@ import WhatsAppButton from './components/WhatsAppButton';
 import AgendeConsulta from './components/AgendeConsulta';
 import About from './components/About';
 import FAQ from './components/FAQ';
+import Videos from './components/Videos';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -73,6 +74,7 @@ const App = () => {
               </>
             }/>
             <Route path="/agende-consulta" element={<AgendeConsulta />} /> {/* Nova rota de agendamento */}
+            <Route path="/videos" element={<Videos />} />
           </Routes>
         </div>
         <WhatsAppButton />
